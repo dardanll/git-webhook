@@ -1,6 +1,6 @@
 class WebhookController < ApplicationController
   def create
     puts params
-    redirect_to '/'
+    render json: {message: 'completed successfully'}, :status => 200
   end
 end
